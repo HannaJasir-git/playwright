@@ -8,7 +8,7 @@ test("FormSubmitlocators",async({page})=>{
     await page.getByPlaceholder("State").fill("kerala")
     await page.getByLabel("Zip").fill("000")
     await page.locator("#invalidCheck").click()
-    await page.getByRole("button",{name:"Submit form"}).click()   //getByRole method for button etc
+    await page.getByRole("button",{name:"Submit form"}).click() ;  //getByRole method for button etc
 
     await page.waitForTimeout(3000)
 })
