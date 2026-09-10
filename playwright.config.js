@@ -14,11 +14,13 @@ import { defineConfig, devices } from '@playwright/test';
  */
 export default defineConfig({
   testDir: './tests',
+  workers:3,
   /* Reporter to use. See https://playwright.dev/docs/test-reporters */
-  reporter: 'html',
+ 
   /* Shared settings for all the projects below. See https://playwright.dev/docs/api/class-testoptions. */
   use: {
-    headless: false
+    headless: false,
+  },
     /* Base URL to use in actions like `await page.goto('')`. */
     // baseURL: 'http://localhost:3000',
 
