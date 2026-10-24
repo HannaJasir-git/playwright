@@ -1,5 +1,5 @@
 import test from "@playwright/test"
-test.only("selectInput",async({page})=>{
+test("selectInput",async({page})=>{
 
     await page.goto("https://selenium.qabible.in/select-input.php")
     const dropdownBox=await page.getByRole("combobox",{name:"Select Color"})

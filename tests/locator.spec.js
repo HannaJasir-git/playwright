@@ -1,5 +1,5 @@
 import {test,expect} from "@playwright/test"
-test.only("FormSubmitLocators",async({page})=>{
+test("FormSubmitLocators",async({page})=>{
     await page.goto("https://selenium.qabible.in/form-submit.php")
     await page.locator("#validationCustom01").fill("Hanna")
     await page.locator(".form-control").nth(1).fill("Jasir")

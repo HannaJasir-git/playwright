@@ -1,5 +1,5 @@
 import test from "@playwright/test"
-test.only("promptDialogHandling",async({page})=>{
+test("promptDialogHandling",async({page})=>{
 
     await page.goto("https://selenium.qabible.in/javascript-alert.php")
    

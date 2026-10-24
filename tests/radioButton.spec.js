@@ -1,5 +1,5 @@
 import {test,expect} from "@playwright/test"
-test.only("radioButtonLocators",async({page})=>{
+test("radioButtonLocators",async({page})=>{
 
    await page.goto("https://selenium.qabible.in/radio-button-demo.php")
    await page.locator("#inlineRadio1").check()

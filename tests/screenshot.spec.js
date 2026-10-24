@@ -1,6 +1,6 @@
 import test from "@playwright/test"
 
-test.only("screenshotLocator",async({page})=>
+test("screenshotLocator",async({page})=>
 {
     await page.goto("https://www.saucedemo.com/cart.html")
     await page.screenshot({path:"Screen.png",fullPage:true})      //Full page screenshot
