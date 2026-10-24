@@ -10,7 +10,7 @@ test("dragDropLocators",async({page})=>{
 })
 
 
-test.only("multipledragDrop",async({page})=>{
+test("multipledragDrop",async({page})=>{
     await page.goto("https://selenium.qabible.in/drag-drop.php")
    const targetBox= await page.locator('[draggable="true"]')
     const destinationBox=await page.locator("#mydropzone")
