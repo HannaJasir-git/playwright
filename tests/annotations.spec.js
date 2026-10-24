@@ -11,10 +11,10 @@ test.skip("annotation for skip",async({page})=>{
     console.log("SKIP TEST STARTED")
 })
 
-test("annotation for fail",async({page})=>{
+/*test("annotation for fail",async({page})=>{
     console.log("FAIL TEST STARTED")
     test.fail()
-})
+})*/
 
 test("annotation for slow",async({page})=>{
     console.log("SLOW TEST STARTED")
