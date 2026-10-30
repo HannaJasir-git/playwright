@@ -1,1 +1,0 @@
-Radio button 'Male' is checked

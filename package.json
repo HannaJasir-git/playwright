@@ -13,7 +13,8 @@
     "webtag": "npx playwright test --grep @web",
     "web_or_tag": "npx playwright test --grep @web|@tag",
     "web_and_tag": "npx playwright test --grep'(?=.*@web)(?=.*@tag)'",
-    "allure": "rmdir /s /q allure-results && npx playwright test && npx allure generate allure-results --clean -o allure-report && npx allure serve allure-results"
+    "rmdir": "rmdir /s /q allure-results",
+    "allure": "npx allure generate allure-results --clean -o allure-report && npx allure serve allure-results"
   },
   "keywords": [],
   "author": "",
