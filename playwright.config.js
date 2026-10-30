@@ -22,7 +22,7 @@ export default defineConfig({
   expect:{
     timeout:60*1000          //assertion time out
   },
-  reporter:'html',
+  reporter:[['html'],['allure-playwright']],
   use: {
     headless: false,
     screenshot:'only-on-failure',
